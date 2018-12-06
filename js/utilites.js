@@ -52,7 +52,8 @@ function mapToObject(map) {
 
 function initGame(level) {
     if(MyObject.lives==0){
-        location.reload();
+        winStopGameProgress();
+         loadlosingPage();
         return;
     }
     for (var i = 0; i < beasts.length; i++) {
@@ -107,8 +108,7 @@ function lossingResetGameProgress() {
         setTimeout(function(){
             initGame(Game.level);
         }, 1000);
-        //shown in lose dialog
-        //MyObject.getMyScore()
+     
     }
 }
 function winStopGameProgress() {

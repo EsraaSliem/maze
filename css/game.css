@@ -187,3 +187,16 @@ img{
     text-align: center;
   
 }
+#btn_lose
+{
+     width: 19%;
+    font-size: 25px;
+    color: #e21344;
+    top: 501px;
+    right: 507px;
+    border-radius: 137px;
+    position: absolute;
+    border: 1px solid #e7931f;
+    background-color: #febf39;
+    height: 39px;
+}
