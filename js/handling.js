@@ -32,7 +32,7 @@ $("#btn_next").click(function(){
     
  
     $("#next").hide();
-    $("#game").show();
+  
        
     if(Game.level==3)
     {
@@ -58,7 +58,7 @@ $("#btn_lose").click(function(){
     
  
     $("#losing").hide();
-    $("#game").show();
+   
     document.location.reload();
        
  
