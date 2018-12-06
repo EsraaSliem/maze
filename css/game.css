@@ -27,7 +27,7 @@
     width: 765px;
     overflow:hidden;
     background-repeat: repeat;
-   
+       border: 1px solid;
     float: left;
     height: 405px;
     
@@ -60,17 +60,11 @@
      border: 3px solid black;
     text-align: center;
 }
-#steps{
-    display: inline-block;
-    float: left;
-    width: 35%;
-  border: 3px solid black;  
-     text-align: center;
-}
+
 #count{
     display: inline-block;
     float: left;
-    width: 35%;
+    width: 70%;
      text-align: center;
      border: 3px solid black;
 }
@@ -135,8 +129,8 @@ img{
 #btn_start{
      width: 6%;
     font-size: 21px;
-    top: 352px;
-    right: 531px;
+       top: 53%;
+    right: 41%;
     border-radius: 127px;
     position: absolute;
 }
@@ -172,8 +166,8 @@ img{
     width: 19%;
     font-size: 25px;
     color: #e21344;
-    top: 501px;
-    right: 507px;
+      top: 80%;
+    right: 40%;
     border-radius: 137px;
     position: absolute;
     border: 1px solid #e7931f;
@@ -192,8 +186,8 @@ img{
      width: 19%;
     font-size: 25px;
     color: #e21344;
-    top: 501px;
-    right: 507px;
+       top: 80%;
+    right: 40%;
     border-radius: 137px;
     position: absolute;
     border: 1px solid #e7931f;

@@ -70,18 +70,18 @@ function initGame(level) {
     Game.sounds.background.play();
     document.getElementById('maze').innerHTML="";
     f=0;
-    switch (level) {
+   switch (level) {
         case 1:
         Beast.prototype.stepSpeed=15;
-        Beast.prototype.speed=500;
+        Beast.prototype.speed=200;
             break;
         case 2:
         Beast.prototype.stepSpeed=10;
-        Beast.prototype.speed=300;
+        Beast.prototype.speed=100;
             break;
         case 3:
         Beast.prototype.stepSpeed=5;
-        Beast.prototype.speed=100;
+        Beast.prototype.speed=50;
             break;
     }
     $("#game_content").css("background-image","url('images/background_"+level+".png')");
@@ -107,7 +107,7 @@ function lossingResetGameProgress() {
         )
         setTimeout(function(){
             initGame(Game.level);
-        }, 1000);
+        }, 300);
      
     }
 }
