@@ -55,15 +55,7 @@ function loadlosingPage()
     $("#game").hide();
      $("#get_score").text("");
     $("#get_score").text(MyObject.getMyScore());
-    if(Game.level>3)
-    {
-   
-    $("#btn_next").val("PLAY AGAIN")
-        
-    }
-   else{
-         $("#btn_next").val("NEXT LEVEL")
-   }
+    
 
     
 }
