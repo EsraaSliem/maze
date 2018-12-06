@@ -17,7 +17,7 @@ function mapToHTML(map1) {
     }
     return html;
 }
-var f=0;
+ f=0;
 function updateMap(map1) {
     var displayMap = [], x, y;
     for (y = 4; y < 20; y += 1) {

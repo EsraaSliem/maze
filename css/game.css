@@ -125,7 +125,8 @@ img{
 .str_img{
      padding: 10px;
     width: 98%;
-       height: 550px;
+     height: 525px;
+      
     position: relative;
     
     
@@ -178,4 +179,11 @@ img{
     border: 1px solid #e7931f;
     background-color: #febf39;
     height: 39px;
+}
+#losing{
+    
+    width: 100%;
+    display: none;
+    text-align: center;
+  
 }

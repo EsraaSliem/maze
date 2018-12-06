@@ -1,7 +1,7 @@
 $("#btn_start").click(function(){
-    $("#start").remove();
-    $("#next").remove();
-    $("#finish").remove();
+    $("#start").hide();
+    $("#next").hide();
+    $("#losing").hide();
     $("#game").show();
     
     initGame(Game.level);
@@ -11,8 +11,9 @@ function loadNextPage()
 {
     
     $("#next").show();
-    $("#game").remove();
-    
+    $("#game").hide();
+     $("#get_score").text("");
+    $("#get_score").text(MyObject.getMyScore());
     if(Game.level>3)
     {
    
@@ -26,23 +27,43 @@ function loadNextPage()
     
 }
 
-//$("#get_score").text(getScore);
+
 $("#btn_next").click(function(){
     
-    $("#start").remove();
-    
-    $("#finish").remove();
-    $("#next").show();
-    $("#game").remove();
-    if($("#btn_next").val()=="PLAY AGAIN")
+ 
+    $("#next").hide();
+    $("#game").show();
+       
+    if(Game.level>3)
     {
-         Game.level=1;
-        initGame(Game.level-1);
+     
+         Game.level=0;
+        initGame(Game.level);
+        
         //win and btn try again
     }
     else{
         Game.level++;
-        initGame(Game.level-1);
+        initGame(Game.level);
     }
        
 })
+function loadlosingPage()
+{
+    
+    $("#losing").show();
+    $("#game").hide();
+     $("#get_score").text("");
+    $("#get_score").text(MyObject.getMyScore());
+    if(Game.level>3)
+    {
+   
+    $("#btn_next").val("PLAY AGAIN")
+        
+    }
+   else{
+         $("#btn_next").val("NEXT LEVEL")
+   }
+
+    
+}

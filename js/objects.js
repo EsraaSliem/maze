@@ -121,7 +121,8 @@ function Beast(x, y) {
         }
     };
     this.draw = function () {
-        $('#game_content').append("<img class ='beast' id='beast_" + this.id + "' src='images/beast_1.png'>")
+       
+$('#game_content').append("<img class ='beast' id='beast_" + this.id + "' >")
         $("#beast_" + this.id).css({ "top": ((this.yPosition - (MyObject.yPosition - cameraY)) * yCell), "left": ((this.xPosition - (MyObject.xPosition - cameraX + this.id)) * xCell) })
         this.autoMove();
     };

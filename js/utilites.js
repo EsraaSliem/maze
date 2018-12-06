@@ -68,7 +68,7 @@ function initGame(level) {
 
     Game.sounds.background.play();
     document.getElementById('maze').innerHTML="";
-
+    f=0;
     switch (level) {
         case 1:
         Beast.prototype.stepSpeed=15;
@@ -110,6 +110,15 @@ function lossingResetGameProgress() {
         //shown in lose dialog
         //MyObject.getMyScore()
     }
+}
+function winStopGameProgress() {
+    Game.isGameInResetProgress = true;
+    Game.sounds.background.stop();
+    Game.sounds.attack.stop();
+    beasts.forEach(item =>
+        clearTimeout(item.timer)
+    )
+
 }
 
 

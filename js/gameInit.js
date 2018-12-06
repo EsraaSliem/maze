@@ -104,8 +104,10 @@ var MyObject = {
 
           if((map[Game.level-1][this.yPosition][this.xPosition] == 'X'))
           {
+              winStopGameProgress();
             
                loadNextPage() ;  
+              
                //win---> show dialog next level
               
           }
@@ -167,4 +169,5 @@ function audioInit(path) {
      }, false);
      return audio;
 }
+
 
