@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*  background-color:  #A4B2A8*/
+#game
+{
+   width: 94%;
+    float: left;
+     margin:0px auto;
+   
+
+  display: none;
+    background-color: #E5E5E5;
+ 
+    padding: 40px;
+}
+#level{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#game_content{
+    display: inline-block;
+    width: 765px;
+    overflow:hidden;
+    background-repeat: repeat;
+   
+    float: left;
+    height: 405px;
+    
+}
+#game_info{
+   
+     display: inline-block;
+    width: 30%;
+   margin-right: 67px;
+    margin-left: 10px;
+    float: left;
+        position: relative;
+    top: 46px;
+    
+     
+  
+}
+
+#score{
+    display: inline-block;
+    float: left;
+    width: 35%;
+  border: 3px solid black; 
+     text-align: center;
+}
+#lives{
+    display: inline-block;
+    float: left;
+    width: 35%;
+     border: 3px solid black;
+    text-align: center;
+}
+#steps{
+    display: inline-block;
+    float: left;
+    width: 35%;
+  border: 3px solid black;  
+     text-align: center;
+}
+#count{
+    display: inline-block;
+    float: left;
+    width: 35%;
+     text-align: center;
+     border: 3px solid black;
+}
+#map{
+   margin-top: 70px;
+    display :block;
+    width: 100%
+}
+  #maze {
+      width: 35em;
+    margin: .25em;
+}
+ 
+
+.tile {
+    width: .7em;
+    height: 1em;
+    float: left;
+}
+.wall {
+    color: #465653;
+    background: #465653;
+}
+.floor {
+    color: darkgray;
+    background: darkgray;
+}
+.player {
+    color: yellow;
+    background: yellow;
+}
+.goal {
+    color: red;
+    background: red;
+}
+br {
+    display: none;
+}
+img{
+    width: 45px;
+    height: 45px;
+    float: left;
+    position: absolute;
+}
+.beast{
+    width: 45px;
+    height: 45px;
+    float: left;
+    position: relative;
+}
+
+.str_img{
+     padding: 10px;
+    width: 98%;
+       height: 550px;
+    position: relative;
+    
+    
+    
+}
+#btn_start{
+     width: 6%;
+    font-size: 21px;
+    top: 352px;
+    right: 531px;
+    border-radius: 127px;
+    position: absolute;
+}
+#start {
+    
+    width: 100%;
+    /* display: none; */
+    text-align: center;
+
+}
+#next{
+    
+    width: 100%;
+    
+    text-align: center;
+        display: none;
+}
+#next div
+{
+
+        position: absolute;
+   top: 299px;
+    left: 592px;
+}
+#next span {
+    font-size: 20px;
+    color: #fbeeb0;
+   
+    position: relative;
+    
+}
+#btn_next{
+    width: 19%;
+    font-size: 25px;
+    color: #e21344;
+    top: 501px;
+    right: 507px;
+    border-radius: 137px;
+    position: absolute;
+    border: 1px solid #e7931f;
+    background-color: #febf39;
+    height: 39px;
+}
