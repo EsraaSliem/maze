@@ -32,7 +32,7 @@ $("#btn_next").click(function(){
     
  
     $("#next").hide();
-  
+  $("#game").show();
        
     if(Game.level==3)
     {
